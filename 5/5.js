@@ -9,7 +9,7 @@
 function repeatStr(n, s) {
     let i = 0;
     let res = ""
-    while (i <= n) {
+    while (i < n) {
         res = res.concat(s)
         i++;
     }
