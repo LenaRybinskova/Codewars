@@ -10,9 +10,10 @@ function repeatStr(n, s) {
     let i = 0;
     let res = ""
     while (i <= n) {
-        res = s.concat(s)
+        res = res.concat(s)
+        i++;
     }
     return res;
 }
 
-repeatStr(5, "Hello")
+console.log(repeatStr(5, "Hello"));
