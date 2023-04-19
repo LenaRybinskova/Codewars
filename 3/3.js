@@ -23,12 +23,19 @@
 
 const arr = [1, 2, 2];
 
+// function squareSum(numbers){
+//   let result = 0;
+//   for (let i = 0; i < numbers.length; i++) {
+//       result += numbers[i] * numbers[i];
+//   }
+//   return result; 
+// }
+// 
+// squareSum(arr)
+
 function squareSum(numbers){
-  let result = 0;
-  for (let i = 0; i < numbers.length; i++) {
-      result += numbers[i] * numbers[i];
-  }
-  return result; 
+    let res=numbers.reduce((acc, i)=>acc+i*i)
+    return res;
 }
 
-squareSum(arr)
+console.log(squareSum(arr))
