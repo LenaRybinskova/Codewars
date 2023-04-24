@@ -10,5 +10,8 @@ function multiply(a, b){
     return res
   }
 
-  console.log(summation(8))
+
+  function makeUpperCase(str) {
+    return str.toUpperCase()
+  }
 
