@@ -75,9 +75,15 @@ function positiveSum(arr) {
     return res
   }
 
-console.log(positiveSum([1,-4,7,12]))
+
 
 
 function makeNegative(num) {
     return num<=0? num : num*-1    
     }
+
+function solution(str){
+   return str.split("").reverse().join("")
+ }
+ 
+ console.log(solution("world"))
