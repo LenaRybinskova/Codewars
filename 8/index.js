@@ -1,3 +1,4 @@
+
 function multiply(a, b){
     return a * b
   }
@@ -42,3 +43,36 @@ const reverseSeq = n => {
     }
   }
 
+
+// https://www.codewars.com/kata/554b4ac871d6813a03000035/train/javascript
+
+//   function highAndLow(numbers){
+//     let arr=[]
+//     for(let i=0;i<numbers.length;i++){
+//         if(numbers[i]!=" " && numbers[i]!="-"){
+//             arr.push(Number(numbers[i]))
+//         }
+//     }
+//     console.log(arr)
+//     return `${Math.max(...arr)} ${Math.min(...arr)}`
+//   }
+//   console.log(highAndLow("1 2 3 4 5"))
+
+
+//   function highAndLow(numbers){
+//     let arr=[]
+//     numbers.split().map((n)=>arr.push(n))
+//     return arr
+// 
+//   }
+//   console.log(highAndLow("1 2 3 4 5"));
+
+function positiveSum(arr) {
+    let res=0;
+    for(let i=0; i<arr.length; i++){
+      arr[i]>0 ? res+=arr[i] : res
+    }
+    return res
+  }
+
+console.log(positiveSum([1,-4,7,12]))
