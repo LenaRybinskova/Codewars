@@ -46,26 +46,13 @@ const reverseSeq = n => {
 
 // https://www.codewars.com/kata/554b4ac871d6813a03000035/train/javascript
 
-//   function highAndLow(numbers){
-//     let arr=[]
-//     for(let i=0;i<numbers.length;i++){
-//         if(numbers[i]!=" " && numbers[i]!="-"){
-//             arr.push(Number(numbers[i]))
-//         }
-//     }
-//     console.log(arr)
-//     return `${Math.max(...arr)} ${Math.min(...arr)}`
-//   }
-//   console.log(highAndLow("1 2 3 4 5"))
+function highAndLow(numbers){
+    let arr=numbers.split(" ")
+    return `${Math.max(...arr)} ${Math.min(...arr)}`
+          }
 
 
-//   function highAndLow(numbers){
-//     let arr=[]
-//     numbers.split().map((n)=>arr.push(n))
-//     return arr
-// 
-//   }
-//   console.log(highAndLow("1 2 3 4 5"));
+
 
 function positiveSum(arr) {
     let res=0;
@@ -96,3 +83,5 @@ function removeChar(str){
 return str.slice(1, str.length-1)
 };
 
+
+  
