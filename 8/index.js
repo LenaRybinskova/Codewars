@@ -120,3 +120,6 @@ function findAverage(array) {
   }
 // console.log(findAverage([1,2,3]))
 
+const stringToNumber = function(str){
+    return Number(str);
+  }
