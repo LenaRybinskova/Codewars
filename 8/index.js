@@ -101,3 +101,18 @@ function findNeedle(haystack) {
     return a.includes(x)
   }
 //   console.log(check("cинее море", "море"))
+
+
+const eng = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+function disemvowel(str) {
+    let newStr = str.split("")
+let newnew = newStr.filter((el) => !eng.includes(el))
+    newnew = newnew.join("")
+    
+    return newnew
+  }
+  console.log(disemvowel("This website is for losers LOL!" ))
+  
+
+//   newnew=newStr.filter((el)=> el !="i" && el !="e" && el !="a" && el !="o" && el !="u")
+//     newnew=newnew.join("")  
