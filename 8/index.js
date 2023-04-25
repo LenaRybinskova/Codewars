@@ -111,8 +111,12 @@ let newnew = newStr.filter((el) => !eng.includes(el))
     
     return newnew
   }
-  console.log(disemvowel("This website is for losers LOL!" ))
+//   console.log(disemvowel("This website is for losers LOL!" ))
   
 
-//   newnew=newStr.filter((el)=> el !="i" && el !="e" && el !="a" && el !="o" && el !="u")
-//     newnew=newnew.join("")  
+function findAverage(array) {
+    return array.length===0 ? 0 : 
+    (array.reduce((acc, el)=>acc+el))/array.length
+  }
+// console.log(findAverage([1,2,3]))
+
