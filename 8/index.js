@@ -127,3 +127,14 @@ const stringToNumber = function(str){
 function simpleMultiplication(number) {
     return number%2===0 ? number *8: number* 9;
 }
+const eng2 = ["a", "e", "i", "o", "u"]
+function getCount(str) {
+    let newStr=str.split("")
+    let newStr2=newStr.filter((el)=>eng2.includes(el))
+    return newStr2.length
+  }
+
+  function getCount(str) {
+    return (str.match(/[aeiou]/ig)||[]).length;
+  }
+//   console.log(getCount("abracadabra"))
