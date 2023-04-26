@@ -197,3 +197,18 @@ function stringToArray(string){
 return string.split(" ")
 }
 // console.log(stringToArray("Robin Singh"))
+
+
+
+// https://www.codewars.com/kata/559590633066759614000063/train/javascript
+// Напишите функцию, которая возвращает минимальное и максимальное количество заданного списка/массива.
+// function minMax(arr){
+//    return arr.length===1 ? [arr[0],arr[0]]: [Math.min(...arr),Math.max(...arr)]
+//   }
+
+  function minMax(arr){
+    return [Math.min(...arr), Math.max(...arr)];
+  }
+// console.log(minMax([1,2,3,4,5]))
+
+
