@@ -155,3 +155,17 @@ return Number(res2)
         }
           }      
 //   console.log(isSquare(25))
+
+// var number = function(busStops){
+//     let plus=0
+//     let minus=0
+//     for (let i = 0; i < busStops.length; i++) {
+//         plus=plus+busStops[i][0]
+//         minus=minus+busStops[i][1]
+// }
+//     return plus-minus
+// }
+// 
+// //
+const number = (busStops) => busStops.reduce((acc, [on, off]) => acc + on - off, 0);
+// console.log(number([[10,0],[3,5],[5,8]]))
