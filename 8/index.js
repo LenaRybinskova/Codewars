@@ -156,6 +156,8 @@ return Number(res2)
           }      
 //   console.log(isSquare(25))
 
+// https://www.codewars.com/kata/5648b12ce68d9daa6b000099/train/javascript
+
 // var number = function(busStops){
 //     let plus=0
 //     let minus=0
@@ -169,3 +171,24 @@ return Number(res2)
 // //
 const number = (busStops) => busStops.reduce((acc, [on, off]) => acc + on - off, 0);
 // console.log(number([[10,0],[3,5],[5,8]]))
+
+
+
+function countPositivesSumNegatives(input) {
+    if(input===null || input.length===0){
+        return []
+    } else {
+        let pos=0
+        let neg=0
+        for(let i=0; i<input.length; i++){
+            if(input[i]>0){
+                pos=pos+1
+            }
+            if(input[i]<0){
+                neg=neg+input[i]
+            }
+        }
+    return [pos, neg]
+    }
+    }
+// console.log(countPositivesSumNegatives([]))
