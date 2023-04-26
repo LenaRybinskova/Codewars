@@ -212,3 +212,8 @@ return string.split(" ")
 // console.log(minMax([1,2,3,4,5]))
 
 
+
+function greet(name){
+    return `Hello, ${name} how are you doing today?`
+  }
+//  console.log(greet("Ryan")) 
