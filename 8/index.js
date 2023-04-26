@@ -138,3 +138,11 @@ function getCount(str) {
     return (str.match(/[aeiou]/ig)||[]).length;
   }
 //   console.log(getCount("abracadabra"))
+
+function squareDigits(num){
+let res=[...num.toString()].map(n => n*n)
+let res2=res.join("")
+return Number(res2)
+}
+// console.log(squareDigits(3212))
+
