@@ -146,3 +146,12 @@ return Number(res2)
 }
 // console.log(squareDigits(3212))
 
+// является ли оно квадратным числом :
+      var isSquare = function(n){
+        if(n<0){
+            return false
+        } else {
+            return Number.isInteger(Math.sqrt(n)) ? true : false
+        }
+          }      
+//   console.log(isSquare(25))
