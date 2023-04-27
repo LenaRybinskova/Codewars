@@ -261,3 +261,15 @@ function greet (name, owner) {
   }
   }
 // console.log(greet('Daniel', 'Daniel'))
+
+
+// https://www.codewars.com/kata/51f2d1cafc9c0f745c00037d/train/javascript
+// Завершите решение так, чтобы оно возвращало true, если первый переданный аргумент (строка) заканчивается вторым аргументом (тоже строкой).
+// function solution(str, ending){
+//   return ending === ''? true: str.slice(-1*ending.length) === ending
+// }
+
+function solution(str, ending){
+return str.substr(0,2)
+}
+console.log(solution('abclkjfdlk', 'bc'))
