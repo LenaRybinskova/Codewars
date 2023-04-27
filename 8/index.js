@@ -241,7 +241,14 @@ else if(res>=0 && res<60){
 // console.log(getGrade(95,90,93))
 
 
-
-
+// function isTriangle(a,b,c)
+// {
+//    return a+b>c && a+c>b && b+c>a ? true: false
+// }
+function isTriangle(a,b,c)
+{
+   return a + b > c && a + c > b && c + b > a;
+}
+// console.log(isTriangle(3,4,5))
 
 
