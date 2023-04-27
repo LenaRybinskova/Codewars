@@ -252,3 +252,12 @@ function isTriangle(a,b,c)
 // console.log(isTriangle(3,4,5))
 
 
+function greet (name, owner) {
+  if(name===owner){
+    return "Hello boss"
+  }
+  else{
+    return "Hello guest"
+  }
+  }
+// console.log(greet('Daniel', 'Daniel'))
