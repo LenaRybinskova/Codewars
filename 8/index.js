@@ -272,4 +272,59 @@ function greet (name, owner) {
 function solution(str, ending){
 return str.substr(0,2)
 }
-console.log(solution('abclkjfdlk', 'bc'))
+// console.log(solution('abclkjfdlk', 'bc'))
+
+// Цель этого упражнения — преобразовать строку в новую строку, где каждый символ в новой строке соответствует "("тому, если этот символ появляется только один раз в исходной строке или ")"если этот символ появляется в исходной строке более одного раза. Игнорировать заглавные буквы при определении, является ли символ дубликатом.
+// https://www.codewars.com/kata/54b42f9314d9229fd6000d9c/train/javascript
+// "din"      =>  "((("
+// "recede"   =>  "()()()"
+// "Success"  =>  ")())())"
+// "(( @"     =>  "))((" 
+
+// function duplicateEncode(word){
+// word =word.toString().split("")
+// let resArr=[]
+// for(let i=0; i<word.length; i++){
+
+// console.log(word[i])
+//   for(let j=i+1;j<word.length; j++){
+//   let flag=false 
+//     console.log(word[j])
+//     if(word[i]===word[j]){
+//       console.log("есть совпадение")
+//       flag=true
+//       resArr.push(")")
+//       console.log(resArr)
+//     }
+//     else{
+//       resArr.push("(")
+//     }
+// 
+//   }
+// }
+// return resArr
+// }
+
+
+// function duplicateEncode(word){
+// 
+//   word =word.toString().split("")
+//   
+//   let resArr=[]
+//   for(let i=0; i<word.length; i++){
+//   console.log(word[i])
+//     for(let j=1;j<word.length; j++){
+//       console.log(word[j])
+// 
+//     }
+//   }
+//   return resArr
+//   }
+// 
+// console.log(duplicateEncode("lena"))
+
+
+function hero(bullets, dragons){
+  return bullets/dragons>=2 ? true: false
+  }
+  // console.log(hero(7,4))
