@@ -390,3 +390,9 @@ function grow(x){
 return x.reduce((acc, el)=>acc*el)
 }
 // console.log(grow([1, 2, 3]))
+
+
+function removeEveryOther(arr){
+  return arr.filter((el,i)=>i===0 || i%2===0)
+}
+// console.log(removeEveryOther([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
