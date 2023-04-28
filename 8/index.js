@@ -371,3 +371,22 @@ return l.filter((el)=>Number.isInteger(el))
 
 
 
+// НЕ РЕШЕНА https://www.codewars.com/kata/551f37452ff852b7bd000139/train/javascript
+// function addBinary(a,b) {
+//   let arr=[]
+//   let temp=a+b
+//   let res=0
+//   while(temp>=1){
+//     temp=Math.floor(temp/2)
+//     console.log((Math.floor(temp/2)*2))
+//     res=temp-(Math.floor(temp/2)*2)
+//     arr.push(res)
+// }
+// return arr.join("")
+// }
+// console.log(addBinary(1, 2))
+
+function grow(x){
+return x.reduce((acc, el)=>acc*el)
+}
+// console.log(grow([1, 2, 3]))
