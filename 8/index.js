@@ -349,3 +349,14 @@ function sum (numbers) {
 return numbers.reduce((acc, n)=>acc+n,0)
 };
 // console.log(sum([1, 5.2, 4, 0, -1]))
+
+
+
+// function findNextSquare(sq) {
+//   return Number.isInteger((Math.sqrt(sq))) ? (Math.sqrt(sq)+1) * (Math.sqrt(sq)+1) : -1
+// }
+function findNextSquare(sq) {
+  var root = Math.sqrt(sq);
+  return root % 1 === 0 ? Math.pow(root + 1, 2) : -1;
+}
+// console.log(findNextSquare(121))
