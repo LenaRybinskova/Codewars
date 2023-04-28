@@ -281,29 +281,29 @@ return str.substr(0,2)
 // "Success"  =>  ")())())"
 // "(( @"     =>  "))((" 
 
-function duplicateEncode(word){
-word =word.toString().split("")
-let resArr=[]
-for(let i=0; i<word.length; i++){
-
-console.log(word[i])
-  for(let j=i+1;j<word.length; j++){
-  let flag=false 
-    console.log(word[j])
-    if(word[i]===word[j]){
-      console.log("есть совпадение")
-      flag=true
-      resArr.push(")")
-      console.log(resArr)
-    }
-    else{
-      resArr.push("(")
-    }
-
-  }
-}
-return resArr
-}
+// function duplicateEncode(word){
+// word =word.toString().split("")
+// let resArr=[]
+// for(let i=0; i<word.length; i++){
+// 
+// console.log(word[i])
+//   for(let j=i+1;j<word.length; j++){
+//   let flag=false 
+//     console.log(word[j])
+//     if(word[i]===word[j]){
+//       console.log("есть совпадение")
+//       flag=true
+//       resArr.push(")")
+//       console.log(resArr)
+//     }
+//     else{
+//       resArr.push("(")
+//     }
+// 
+//   }
+// }
+// return resArr
+// }
 
 
 // function duplicateEncode(word){
