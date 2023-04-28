@@ -360,3 +360,14 @@ function findNextSquare(sq) {
   return root % 1 === 0 ? Math.pow(root + 1, 2) : -1;
 }
 // console.log(findNextSquare(121))
+
+
+
+
+function filter_list(l) {
+return l.filter((el)=>Number.isInteger(el))
+}
+// console.log(filter_list([1,2,'a','b']))
+
+
+
