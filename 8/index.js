@@ -334,3 +334,18 @@ function invert(array) {
     return array.map((el)=>-el)
 }
 // console.log(invert([1,-2,3,-4,5]))
+
+
+class SmallestIntegerFinder {
+  findSmallestInt(args){
+    return Math.min(...args)
+  }
+}
+// console.log(findSmallestInt([34, 15, 88, 2]))
+
+
+function sum (numbers) {
+  "use strict";
+return numbers.reduce((acc, n)=>acc+n,0)
+};
+// console.log(sum([1, 5.2, 4, 0, -1]))
