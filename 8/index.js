@@ -396,3 +396,17 @@ function removeEveryOther(arr){
   return arr.filter((el,i)=>i===0 || i%2===0)
 }
 // console.log(removeEveryOther([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+
+
+
+function reverseWords(str) {
+  let arr=[]
+  let tmp=str.split(" ")
+  for(let i=0; i<tmp.length; i++) {
+    let tmp2=tmp[i].split("").reverse()
+    tmp2=tmp2.join("")
+    arr.push(tmp2)
+  }
+return arr.join(" ")
+}
+// console.log(reverseWords("double  spaces"))
