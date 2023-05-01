@@ -433,4 +433,8 @@ function DNAtoRNA(dna) {
 // console.log(DNAtoRNA("GCAT"))
 
 
-
+function bmi(weight, height) {
+  let res=weight/(height**2)
+  return res <= 18.5 ? "Underweight" : res <=25.0 ?  "Normal" : res <= 30.0? "Overweight" : res > 30.0 ? "Obese": ""
+}
+console.log(bmi(80, 1.80))
