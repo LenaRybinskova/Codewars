@@ -437,4 +437,23 @@ function bmi(weight, height) {
   let res=weight/(height**2)
   return res <= 18.5 ? "Underweight" : res <=25.0 ?  "Normal" : res <= 30.0? "Overweight" : res > 30.0 ? "Obese": ""
 }
-console.log(bmi(80, 1.80))
+// console.log(bmi(80, 1.80))
+
+
+// function findShort(s){
+//   let bigArr=s.split(" ")
+//   let minArr=bigArr[0].length
+//   for(let i=0; i<bigArr.length;i++){
+//     if((bigArr[i].length)<minArr){
+//       minArr=bigArr[i].length
+//     }
+//   }
+//   return minArr
+// }
+
+function findShort(s){
+  return Math.min(...s.split(" ").map (s => s.length));
+}
+console.log(findShort("bitcoin take over the world maybe who knows perhaps"))
+
+
