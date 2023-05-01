@@ -399,14 +399,28 @@ function removeEveryOther(arr){
 
 
 
+// function reverseWords(str) {
+//   let arr=[]
+//   let tmp=str.split(" ")
+//   for(let i=0; i<tmp.length; i++) {
+//     let tmp2=tmp[i].split("").reverse()
+//     tmp2=tmp2.join("")
+//     arr.push(tmp2)
+//   }
+// return arr.join(" ")
+// }
+// function reverseWords(str) {
+//   return str.split(' ').map(function(word){
+//     return word.split('').reverse().join('');
+//   }).join(' ');
+// }
 function reverseWords(str) {
-  let arr=[]
-  let tmp=str.split(" ")
-  for(let i=0; i<tmp.length; i++) {
-    let tmp2=tmp[i].split("").reverse()
-    tmp2=tmp2.join("")
-    arr.push(tmp2)
-  }
-return arr.join(" ")
+  return str.split(' ').map( str => str.split('').reverse().join('') ).join(' ');
 }
 // console.log(reverseWords("double  spaces"))
+
+
+function problem(x){
+  return typeof(x)==="string" ? "Error" : (x*50)+6
+}
+// console.log(problem(10))
