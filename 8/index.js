@@ -454,6 +454,12 @@ function bmi(weight, height) {
 function findShort(s){
   return Math.min(...s.split(" ").map (s => s.length));
 }
-console.log(findShort("bitcoin take over the world maybe who knows perhaps"))
+// console.log(findShort("bitcoin take over the world maybe who knows perhaps"))
+
+
+function smash (words) {
+  return words.join(" ")
+};
+// console.log(smash(['hello', 'world', 'this', 'is', 'great']))
 
 
