@@ -463,3 +463,35 @@ function smash (words) {
 // console.log(smash(['hello', 'world', 'this', 'is', 'great']))
 
 
+function areYouPlayingBanjo(name) {
+return name[0].toUpperCase()==="R"? `${name} plays banjo` : `${name} does not play banjo`
+}
+// console.log(areYouPlayingBanjo("Adam"))
+
+// function removeSmallest(numbers) {
+//   let newArr=[]
+//   let min=Math.min(...numbers)
+//   let flag=false;
+//   for(let i=0; i<numbers.length; i++){
+//     if(numbers[i]===min && flag===false){
+//         flag=true;
+//     } else if ( numbers[i]===min && flag===true){
+//       newArr.push(numbers[i])
+//     } else{
+//         newArr.push(numbers[i])
+//     }
+//   }
+//   return newArr
+// }
+// console.log(removeSmallest([2,2,1,2,1]))
+
+function removeSmallest(numbers) {
+let indexOfMin=numbers.indexOf(Math.min(...numbers))
+return [...numbers.slice(0, indexOfMin), ...numbers.slice(indexOfMin+1)]
+}
+
+function removeSmallest(numbers) {
+  const min = Math.min.apply(this, numbers);
+  return numbers.filter((num, idx, arr) => idx !== arr.indexOf(min));
+}
+console.log(removeSmallest([2,2,1,2,1]))
