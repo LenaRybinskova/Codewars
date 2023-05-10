@@ -494,4 +494,22 @@ function removeSmallest(numbers) {
   const min = Math.min.apply(this, numbers);
   return numbers.filter((num, idx, arr) => idx !== arr.indexOf(min));
 }
-console.log(removeSmallest([2,2,1,2,1]))
+// console.log(removeSmallest([2,2,1,2,1]))
+
+
+function getSum(a, b){
+
+  if (a === b){
+    return b
+  }
+  let min= a < b ? a : b
+  let max= a > b ? a : b
+  console.log(min)
+  let acc=min;
+  while(min<max){
+    min++
+    acc+=min
+  }
+  return acc
+}
+// console.log(getSum(0, -1))
