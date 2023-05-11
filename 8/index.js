@@ -523,4 +523,17 @@ arr.push(i)
 }
 return arr
 }
-console.log(pipeFix([1,3,5,6,7,8]))
+// console.log(pipeFix([1,3,5,6,7,8]))
+
+
+
+// function betterThanAverage(classPoints, yourPoints) {
+// 
+//   let res=(classPoints.reduce((acc, el, i, arr)=>(acc+el)))/classPoints.length
+// return res<yourPoints ? true: false
+// }
+
+function betterThanAverage(classPoints, yourPoints) {
+  return yourPoints > classPoints.reduce((a, b) => a + b, 0) / classPoints.length; 
+}
+// console.log(betterThanAverage([100, 40, 34, 57, 29, 72, 57, 88], 7))
