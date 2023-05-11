@@ -513,3 +513,14 @@ function getSum(a, b){
   return acc
 }
 // console.log(getSum(0, -1))
+
+function pipeFix(numbers){
+let arr=[];
+const min=Math.min(...numbers)
+const max=Math.max(...numbers)
+for(let i=min; i<max+1;i++){
+arr.push(i)
+}
+return arr
+}
+console.log(pipeFix([1,3,5,6,7,8]))
