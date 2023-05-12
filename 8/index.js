@@ -537,3 +537,45 @@ function betterThanAverage(classPoints, yourPoints) {
   return yourPoints > classPoints.reduce((a, b) => a + b, 0) / classPoints.length; 
 }
 // console.log(betterThanAverage([100, 40, 34, 57, 29, 72, 57, 88], 7))
+
+
+
+// function basicOp(operation, value1, value2)
+// {
+// switch(operation){
+// case "+":
+//     return value1+value2
+// case "-":
+//     return value1-value2
+// case "*":
+//     return value1*value2
+// case "/":
+//     return value1/value2
+// }
+// }
+
+// function basicOp(o, a, b) {
+//   return eval(val1+oper+val2);
+// }
+
+const basicOperations = {
+  '+': (a,b) => a + b,
+  '-': (a,b) => a - b,
+  '*': (a,b) => a * b,
+  '/': (a,b) => a / b,
+}
+// console.log(basicOp('+', 4, 7))
+
+
+// function doubleChar(str) {
+//   let res=""
+//   for(let i=0; i<str.length;i++){
+//     res=res+str[i].repeat(2)
+//   }
+//   return res
+// }
+
+function doubleChar(str) {
+return str.split("").map((el)=>el+el).join("")
+}
+// console.log(doubleChar("String"))
