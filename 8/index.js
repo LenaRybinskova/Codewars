@@ -579,3 +579,15 @@ function doubleChar(str) {
 return str.split("").map((el)=>el+el).join("")
 }
 // console.log(doubleChar("String"))
+
+
+// function abbrevName(name){
+// let arr=""
+// let str=name.split(" ")
+// return (arr+=str[0][0]+"."+str[1][0]).toUpperCase()
+// }
+
+function abbrevName(name){
+  return name.split(" ").map((el)=>el[0]).join(".")
+  }
+// console.log(abbrevName("Sam Harris"))
