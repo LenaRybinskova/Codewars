@@ -591,3 +591,11 @@ function abbrevName(name){
   return name.split(" ").map((el)=>el[0]).join(".")
   }
 // console.log(abbrevName("Sam Harris"))
+
+function countBy(x, n) {
+  let z = [];
+  for(let i = x; i <= n*x; i = i+x) {
+    z.push(i)
+  }
+  return z
+}
