@@ -599,3 +599,7 @@ function countBy(x, n) {
   }
   return z
 }
+
+function boolToWord( bool ){
+  return bool ? "Yes": "No"
+   }
