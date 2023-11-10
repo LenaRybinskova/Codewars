@@ -622,9 +622,15 @@ function boolToWord(bool) {
 
 // Завершите функцию суммы квадратов так, чтобы она возводила в квадрат каждое переданное в нее число, а затем суммировала результаты.
 // Например, для [1, 2, 2]него следует вернуться 9
-
 function squareSum(numbers) {
     return numbers.length > 0 ? numbers.reduce((acc, n) => {return (acc + n * n)}, 0) : 0
 }
-
 /*console.log(squareSum([-14, -16, -16, -4, 6, 1]))*/
+
+
+//  We need a function that can transform a number (integer) into a string.  123  --> "123"
+function numberToString(num) {
+    return num.toString()
+}
+
+
