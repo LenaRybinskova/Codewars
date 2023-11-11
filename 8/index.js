@@ -634,3 +634,8 @@ function numberToString(num) {
 }
 
 
+// We need a function that can transform a string into a number. What ways of achieving this do you know? "1234" --> 1234
+const stringToNumber22 = function(str){
+    return Number(str)
+/*    return +str*/
+}
