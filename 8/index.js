@@ -648,3 +648,8 @@ function findNeedle(haystack) {
     return `found the needle at position ${haystack.indexOf("needle")}`
 }
 
+
+//keysAndValues({a: 1, b: 2, c: 3}) // should return [['a', 'b', 'c'], [1, 2, 3]]
+function keysAndValues(data){
+    return [Object.keys(data),Object.values(data)]
+}
