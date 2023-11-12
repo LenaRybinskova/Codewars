@@ -639,3 +639,12 @@ const stringToNumber22 = function(str){
     return Number(str)
 /*    return +str*/
 }
+
+
+function findNeedle(haystack) {
+/*    for (let i=0; i<haystack.length;i++){
+        if(haystack[i]==="needle") return `found the needle at position ${i}`
+    }*/
+    return `found the needle at position ${haystack.indexOf("needle")}`
+}
+
