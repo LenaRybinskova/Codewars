@@ -623,8 +623,11 @@ function boolToWord(bool) {
 // Завершите функцию суммы квадратов так, чтобы она возводила в квадрат каждое переданное в нее число, а затем суммировала результаты.
 // Например, для [1, 2, 2]него следует вернуться 9
 function squareSum(numbers) {
-    return numbers.length > 0 ? numbers.reduce((acc, n) => {return (acc + n * n)}, 0) : 0
+    return numbers.length > 0 ? numbers.reduce((acc, n) => {
+        return (acc + n * n)
+    }, 0) : 0
 }
+
 /*console.log(squareSum([-14, -16, -16, -4, 6, 1]))*/
 
 
@@ -635,21 +638,27 @@ function numberToString(num) {
 
 
 // We need a function that can transform a string into a number. What ways of achieving this do you know? "1234" --> 1234
-const stringToNumber22 = function(str){
+const stringToNumber22 = function (str) {
     return Number(str)
-/*    return +str*/
+    /*    return +str*/
 }
 
 
 function findNeedle(haystack) {
-/*    for (let i=0; i<haystack.length;i++){
-        if(haystack[i]==="needle") return `found the needle at position ${i}`
-    }*/
+    /*    for (let i=0; i<haystack.length;i++){
+            if(haystack[i]==="needle") return `found the needle at position ${i}`
+        }*/
     return `found the needle at position ${haystack.indexOf("needle")}`
 }
 
 
 //keysAndValues({a: 1, b: 2, c: 3}) // should return [['a', 'b', 'c'], [1, 2, 3]]
-function keysAndValues(data){
-    return [Object.keys(data),Object.values(data)]
+function keysAndValues(data) {
+    return [Object.keys(data), Object.values(data)]
 }
+
+
+function sortList(sortBy, list) {
+    return list.sort((a,b)=>b[sortBy] - a[sortBy])
+}
+/*console.log(sortList("a", [{"a": 1, "b": 3}, {"a": 3, "b": 2}, {"a": 2, "b": 40}, {"a": 4, "b": 12}]))*/
