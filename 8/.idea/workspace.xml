@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a3d6016e-952e-4bd9-b4db-0e4e9f9ae3da" name="Changes" comment="66">
+      <change beforePath="$PROJECT_DIR$/../1/1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2/2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3/3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../4/4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../4/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5/5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../6/6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../6/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../7/7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../7/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2XlZnxSeypOVrzOca8I4XRYs88q" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Alex/Documents/Lena/Codewars/8&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/index.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.index.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a3d6016e-952e-4bd9-b4db-0e4e9f9ae3da" name="Changes" comment="" />
+      <created>1699205797872</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699205797872</updated>
+      <workItem from="1699205798911" duration="3496000" />
+      <workItem from="1699211465080" duration="260000" />
+      <workItem from="1699649735125" duration="7680000" />
+      <workItem from="1700417271251" duration="50000" />
+    </task>
+    <task id="LOCAL-00001" summary="61">
+      <created>1699209363726</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699209363726</updated>
+    </task>
+    <task id="LOCAL-00002" summary="62">
+      <created>1699649975418</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1699649975418</updated>
+    </task>
+    <task id="LOCAL-00003" summary="63">
+      <created>1699721819234</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699721819234</updated>
+    </task>
+    <task id="LOCAL-00004" summary="64">
+      <created>1699823149241</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699823149241</updated>
+    </task>
+    <task id="LOCAL-00005" summary="65">
+      <created>1699823511546</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1699823511546</updated>
+    </task>
+    <task id="LOCAL-00006" summary="66">
+      <created>1700153156107</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1700153156107</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="61" />
+    <MESSAGE value="62" />
+    <MESSAGE value="63" />
+    <MESSAGE value="64" />
+    <MESSAGE value="65" />
+    <MESSAGE value="66" />
+    <option name="LAST_COMMIT_MESSAGE" value="66" />
+  </component>
+</project>
