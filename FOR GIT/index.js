@@ -706,3 +706,11 @@ function keysAndValues(data){
     return [Object.keys(data),Object.values(data)]
 }
 /*console.log(keysAndValues({a: 1, b: 2, c: 3})); //[['a', 'b', 'c'], [1, 2, 3]]*/
+
+
+
+
+var parseNumbers = function(intStrs) {
+    return intStrs.map(parseInt=>Math.floor(Number(parseInt)));
+}
+/*console.log(parseNumbers(['-1','0','1']))*/
