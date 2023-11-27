@@ -711,6 +711,12 @@ function keysAndValues(data){
 
 
 var parseNumbers = function(intStrs) {
-    return intStrs.map(parseInt=>Math.floor(Number(parseInt)));
+    return intStrs.map(parseInt=>Math.round(Number(parseInt)));
 }
-/*console.log(parseNumbers(['-1','0','1']))*/
+/*console.log(parseNumbers([ "21", "50", "51" ]))*/
+
+
+function well(x){
+   const nn= x.filter(el => el==='good')
+    return nn.length>2? "I smell a series!": nn.length>=1 ? "Publish!": "Fail!"
+}
