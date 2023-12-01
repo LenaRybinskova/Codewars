@@ -720,3 +720,7 @@ function well(x){
    const nn= x.filter(el => el==='good')
     return nn.length>2? "I smell a series!": nn.length>=1 ? "Publish!": "Fail!"
 }
+
+function digitize(n) {
+    return [...n.toString()].reverse().map(n=>Number(n))
+}
