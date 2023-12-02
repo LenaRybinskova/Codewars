@@ -724,3 +724,12 @@ function well(x){
 function digitize(n) {
     return [...n.toString()].reverse().map(n=>Number(n))
 }
+
+var summation = function (num) {
+    let arr = []
+    for (let i = 1; i <=num; i++) {
+        arr.push(i)
+    }
+    return arr.reduce((acc, n)=>acc + n)
+}
+
