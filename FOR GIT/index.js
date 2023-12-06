@@ -689,60 +689,72 @@ function solution2(str) {
 console.log(solution2("world"))*/
 
 function solution2(str) {
-/*    let arr = []
-    for (let i = str.length - 1; i >= 0; i--) {
-        arr.push(str[i])
-    }
-    return arr.join("")*/
+    /*    let arr = []
+        for (let i = str.length - 1; i >= 0; i--) {
+            arr.push(str[i])
+        }
+        return arr.join("")*/
     return [...str]
 }
 
 function areYouPlayingBanjo(name) {
-    return name[0].toLowerCase()==="r"? `${name} plays banjo`:`${name} does not play banjo`
+    return name[0].toLowerCase() === "r" ? `${name} plays banjo` : `${name} does not play banjo`
 
 }
 
-function keysAndValues(data){
-    return [Object.keys(data),Object.values(data)]
+function keysAndValues(data) {
+    return [Object.keys(data), Object.values(data)]
 }
+
 /*console.log(keysAndValues({a: 1, b: 2, c: 3})); //[['a', 'b', 'c'], [1, 2, 3]]*/
 
 
-
-
-var parseNumbers = function(intStrs) {
-    return intStrs.map(parseInt=>Math.round(Number(parseInt)));
+var parseNumbers = function (intStrs) {
+    return intStrs.map(parseInt => Math.round(Number(parseInt)));
 }
+
 /*console.log(parseNumbers([ "21", "50", "51" ]))*/
 
 
-function well(x){
-   const nn= x.filter(el => el==='good')
-    return nn.length>2? "I smell a series!": nn.length>=1 ? "Publish!": "Fail!"
+function well(x) {
+    const nn = x.filter(el => el === 'good')
+    return nn.length > 2 ? "I smell a series!" : nn.length >= 1 ? "Publish!" : "Fail!"
 }
 
 function digitize(n) {
-    return [...n.toString()].reverse().map(n=>Number(n))
+    return [...n.toString()].reverse().map(n => Number(n))
 }
 
 var summation = function (num) {
     let arr = []
-    for (let i = 1; i <=num; i++) {
+    for (let i = 1; i <= num; i++) {
         arr.push(i)
     }
-    return arr.reduce((acc, n)=>acc + n)
+    return arr.reduce((acc, n) => acc + n)
 }
 
-function Dog (breed) {
+function Dog(breed) {
     this.breed = breed;
 }
-Dog.prototype.bark = function() {
+
+Dog.prototype.bark = function () {
     return "Woof";
 };
 var snoopy = new Dog("Beagle");
 
-snoopy.bark = function() {
+snoopy.bark = function () {
     return "Woof";
 };
 
 var scoobydoo = new Dog("Great Dane");
+
+
+Array.prototype.filter = function (func) {
+    let newArr = []
+    for (let i = 0; i < this.length; i++) {
+        if (func(this[i], i, this)) {
+            newArr.push(this[i])
+        }
+    }
+    return newArr
+}
