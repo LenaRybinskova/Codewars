@@ -758,3 +758,10 @@ Array.prototype.filter = function (func) {
     }
     return newArr
 }
+
+function differenceInAges(ages) {
+    const n = ages.sort((a, b) => b - a)
+    return [n[n.length-1],n[0],Math.abs(n[n.length-1]-n[0])]
+}
+
+console.log(differenceInAges([82, 15, 6, 38, 35])) // [6, 82, 76]
