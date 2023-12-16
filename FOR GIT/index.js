@@ -765,6 +765,10 @@ function differenceInAges(ages) {
 }
 
 function countWords(str) {
-    return str ? str.trim().split(" ").filter(n=>n!=="").length : 0
+    return str ? str.trim().split(" ").filter(n => n !== "").length : 0
+}
+
+function sumMix(x){
+return x.reduce((acc,n)=>acc+Number(n),0)
 }
 
