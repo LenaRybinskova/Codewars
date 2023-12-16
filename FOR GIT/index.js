@@ -761,7 +761,10 @@ Array.prototype.filter = function (func) {
 
 function differenceInAges(ages) {
     const n = ages.sort((a, b) => b - a)
-    return [n[n.length-1],n[0],Math.abs(n[n.length-1]-n[0])]
+    return [n[n.length - 1], n[0], Math.abs(n[n.length - 1] - n[0])]
 }
 
-console.log(differenceInAges([82, 15, 6, 38, 35])) // [6, 82, 76]
+function countWords(str) {
+    return str ? str.trim().split(" ").filter(n=>n!=="").length : 0
+}
+
