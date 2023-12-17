@@ -772,3 +772,4 @@ function sumMix(x){
 return x.reduce((acc,n)=>acc+Number(n),0)
 }
 
+
