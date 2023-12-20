@@ -771,5 +771,7 @@ function countWords(str) {
 function sumMix(x){
 return x.reduce((acc,n)=>acc+Number(n),0)
 }
-
+function arrayMadness(a, b) {
+    return a.reduce((acc, n)=>acc+n**2,0) > b.reduce((acc, n)=>acc+n**3,0)
+}
 
