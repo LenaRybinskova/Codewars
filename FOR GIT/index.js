@@ -779,5 +779,20 @@ function lovefunc(flower1, flower2) {
     return flower1 % 2 === 0 && flower2 % 2 === 0 ? false : flower1 % 2 == 0 || flower2 % 2 == 0 ? true : false
 }
 
+function neutralise(s1, s2) {
+    let res=""
+    for (let i = 0; i < s1.length; i++) {
+        if(s1[i]===s2[i] && s1[i]==="+"){
+            res=res+"+"
+        }
+        if(s1[i]===s2[i] && s1[i]==="-"){
+            res=res+"-"
+        }
+        if(s1[i]!==s2[i]){
+            res=res+"0"
+        }
+    }
+    return res;
+}
 
 
