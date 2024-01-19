@@ -768,11 +768,12 @@ function countWords(str) {
     return str ? str.trim().split(" ").filter(n => n !== "").length : 0
 }
 
-function sumMix(x){
-return x.reduce((acc,n)=>acc+Number(n),0)
+function sumMix(x) {
+    return x.reduce((acc, n) => acc + Number(n), 0)
 }
+
 function arrayMadness(a, b) {
-    return a.reduce((acc, n)=>acc+n**2,0) > b.reduce((acc, n)=>acc+n**3,0)
+    return a.reduce((acc, n) => acc + n ** 2, 0) > b.reduce((acc, n) => acc + n ** 3, 0)
 }
 
 function lovefunc(flower1, flower2) {
@@ -780,23 +781,25 @@ function lovefunc(flower1, flower2) {
 }
 
 function neutralise(s1, s2) {
-    let res=""
+    let res = ""
     for (let i = 0; i < s1.length; i++) {
-        if(s1[i]===s2[i] && s1[i]==="+"){
-            res=res+"+"
+        if (s1[i] === s2[i] && s1[i] === "+") {
+            res = res + "+"
         }
-        if(s1[i]===s2[i] && s1[i]==="-"){
-            res=res+"-"
+        if (s1[i] === s2[i] && s1[i] === "-") {
+            res = res + "-"
         }
-        if(s1[i]!==s2[i]){
-            res=res+"0"
+        if (s1[i] !== s2[i]) {
+            res = res + "0"
         }
     }
     return res;
 }
 
 function isDivisible(n, x, y) {
-    return n%x===0 && n%y===0 ? true:false
+    return n % x === 0 && n % y === 0 ? true : false
 }
 
-
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+    return distanceToPump / mpg <= fuelLeft
+};
