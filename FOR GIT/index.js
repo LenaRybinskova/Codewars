@@ -803,3 +803,15 @@ function isDivisible(n, x, y) {
 const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
     return distanceToPump / mpg <= fuelLeft
 };
+
+
+function reverseWords(strr) {
+    let newStr = [];
+    const words = strr.split(' ');
+
+    for (let i = words.length - 1; i >= 0; i--) {
+        newStr.push(words[i]);
+    }
+
+    return newStr.join(' ');
+}
