@@ -818,6 +818,24 @@ function reverseWords(strr) {
 
 
 function arrayPlusArray(arr1, arr2) {
-    return arr1.reduce((acc,el)=>acc + el,0) + arr2.reduce((acc,el)=>acc + el,0)
-/*    return arr1.concat(arr2).reduce((acc, cur) => acc + cur);*/
+    return arr1.reduce((acc, el) => acc + el, 0) + arr2.reduce((acc, el) => acc + el, 0)
+    /*    return arr1.concat(arr2).reduce((acc, cur) => acc + cur);*/
 }
+
+function sumArray(array) {
+    /*    const sum = array.reduce((acc, el) => acc + el, 0)
+        return sum - Math.min(...array) - Math.max(...array)*/
+    /*if(array){
+        const newSort = array.sort((a, b) => a - b)
+        let sum = 0
+        for (let i = 1; i < newSort.length-1; i++) {
+            sum += newSort[i]
+        }
+        return sum
+    }
+    else{
+        return 0
+    }*/
+    sumArray = a => a ? a.sort((x, y) => x - y).slice(1, -1).reduce((s, e) => s + e, 0) : 0
+}
+
