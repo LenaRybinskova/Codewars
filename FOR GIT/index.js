@@ -839,6 +839,10 @@ function sumArray(array) {
     sumArray = a => a ? a.sort((x, y) => x - y).slice(1, -1).reduce((s, e) => s + e, 0) : 0
 }
 
-function getAverage(marks){
-    return Math.floor(marks.reduce((acc, el)=>acc+el,0)/marks.length)
+function getAverage(marks) {
+    return Math.floor(marks.reduce((acc, el) => acc + el, 0) / marks.length)
 }
+
+const areaOrPerimeter = function (l, w) {
+    return l === w ? l *w : (l + w) * 2
+};
