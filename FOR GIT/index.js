@@ -851,3 +851,7 @@ const areaOrPerimeter = function (l, w) {
 function removeExclamationMarks(s) {
     return [...s].filter(el=>el!="!").join("")
 }
+
+const quarterOf = (month) => {
+    return month <= 3 ? 1 : (month <= 6 ? 2 : (month <= 9 ? 3 : 4))
+}
