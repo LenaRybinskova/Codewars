@@ -844,14 +844,20 @@ function getAverage(marks) {
 }
 
 const areaOrPerimeter = function (l, w) {
-    return l === w ? l *w : (l + w) * 2
+    return l === w ? l * w : (l + w) * 2
 };
 
 
 function removeExclamationMarks(s) {
-    return [...s].filter(el=>el!="!").join("")
+    return [...s].filter(el => el != "!").join("")
 }
 
 const quarterOf = (month) => {
     return month <= 3 ? 1 : (month <= 6 ? 2 : (month <= 9 ? 3 : 4))
+}
+
+function solution(str, ending) {
+    const ind = str.length - ending.length
+    const newStr = [...str].filter((el, i) => i >= ind).join("")
+    return newStr.includes(ending)
 }
