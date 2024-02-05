@@ -861,3 +861,8 @@ function solution(str, ending) {
     const newStr = [...str].filter((el, i) => i >= ind).join("")
     return newStr.includes(ending)
 }
+
+function greet(name){
+    return name === "Johnny" ? "Hello, my love!" : "Hello, " + name + "!"
+}
+
