@@ -866,3 +866,9 @@ function greet(name){
     return name === "Johnny" ? "Hello, my love!" : "Hello, " + name + "!"
 }
 
+function getAge(inputString){
+return  Number(inputString.split("").filter(el =>+el))
+}
+
+console.log(getAge("4 years old"))
+
