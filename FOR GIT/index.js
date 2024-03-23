@@ -868,7 +868,17 @@ function greet(name){
 
 function getAge(inputString){
 return  Number(inputString.split("").filter(el =>+el))
+/*    return +inputString[0]*/
+/*    return parseInt(inputString);*/
 }
 
-console.log(getAge("4 years old"))
+
+function monkeyCount(n) {
+    let newArr=[]
+    while(n>0){
+        newArr.unshift(n);
+        n--
+    }
+return newArr
+}
 
