@@ -862,23 +862,28 @@ function solution(str, ending) {
     return newStr.includes(ending)
 }
 
-function greet(name){
+function greet(name) {
     return name === "Johnny" ? "Hello, my love!" : "Hello, " + name + "!"
 }
 
-function getAge(inputString){
-return  Number(inputString.split("").filter(el =>+el))
-/*    return +inputString[0]*/
-/*    return parseInt(inputString);*/
+function getAge(inputString) {
+    return Number(inputString.split("").filter(el => +el))
+    /*    return +inputString[0]*/
+    /*    return parseInt(inputString);*/
 }
 
 
 function monkeyCount(n) {
-    let newArr=[]
-    while(n>0){
+    let newArr = []
+    while (n > 0) {
         newArr.unshift(n);
         n--
     }
-return newArr
+    return newArr
+}
+
+function sumStr(a, b) {
+    return String(Number(a) + Number(b))
+/*    return (+a+ +b)+''*/
 }
 
