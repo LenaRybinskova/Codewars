@@ -918,3 +918,15 @@ function getPlanetName(id){
     }
     return name;
 }
+
+
+
+function getMiddle(s){
+    if(s.length % 2===0) {
+        const middle=s.length / 2
+        return s.slice(middle-1, middle+1)
+    } else{
+        const index = Math.floor(s.length/2)
+        return s[index]
+    }
+}
